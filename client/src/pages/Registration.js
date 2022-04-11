@@ -28,6 +28,7 @@ export default function Registration() {
   };
 
   const login = async () => {
+    
     const { data } = await Axios.post("http://localhost:3001/login", {
       name: username,
       password: password,
