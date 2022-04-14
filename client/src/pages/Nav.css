@@ -1,0 +1,29 @@
+.navigaton {
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+    display: flex;
+    color: black;
+  
+   font-size: 25px;
+   align-items: center;
+   text-indent: 50px;
+   display: flex;
+}
+
+.li {
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  .nav-active {
+  
+      width: 85%;
+      height: 5px;
+      
+      position: absolute;
+      bottom: 1px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
