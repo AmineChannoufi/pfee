@@ -47,14 +47,14 @@ app.get("/login", (req, res) => {
 });
 
 app.post("/register", function (req, res) {
-  const { name, password } = req.body;
+  const { name, password , email , telephone,societe} = req.body;
   bcrypt.hash(password, saltRounds, function (err, hash) {
     if (err) {
       console.log(err);
     }
 
     db.query(
-      `INSERT INTO user (name, password) VALUES ('${name}','${hash}')`,
+      `INSERT INTO user (name, password, email , telephone , societe) VALUES ('${name}','${hash}','${email}','${telephone}','${societe}')`,
       function (error, results) {
         if (error) throw error;
         res.send(results);

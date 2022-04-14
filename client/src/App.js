@@ -7,6 +7,9 @@ import Home from "./pages/Home";
 import Adherent from "./pages/Adherent";
 import Pres from "./pages/Pres";
 import Login from "./pages/Login";
+import Admin from "./dashboard/Admin";
+import Normal from "./dashboard/Normal";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -18,6 +21,10 @@ function App() {
       <Route path="/Pres" element={<Pres/>} />
       <Route path="/Adherent" element={<Adherent/>} />
       <Route path="/Login" element={<Login/>} />
+      <Route path="/Login/Admin" element={<Admin/>} />
+      <Route path="/Login/Normal" element={<Normal/>} />
+      <Route path="/Contact" element={<Contact/>} />
+
 
 
 

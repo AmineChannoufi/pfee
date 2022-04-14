@@ -8,7 +8,7 @@ export default function ThemeRoutes() {
         [
             {
                 path: "/",
-                element: <Main />
+                element: <Home />
             },
             {
                 path: "/registration",

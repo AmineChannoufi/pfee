@@ -37,6 +37,11 @@ const Navigation = () => {
             Login
           </Link>
         </li>
+        <li>
+          <Link exact to="/Contact" activeClassName="nav-active">
+            Contact
+          </Link>
+        </li>
 
         
       </div>
